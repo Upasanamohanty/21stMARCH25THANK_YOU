@@ -1,0 +1,30 @@
+"use client";
+
+import React from "react";
+
+const OrderSuccess: React.FC = () => {
+  return (
+    <div className="flex flex-col items-center justify-center w-[82.19rem] h-[14.19rem] mt-[26rem] ml-[3.94rem] space-y-4">
+     
+      <div className="w-[2.5rem] h-[2.5rem] bg-green-500 flex items-center justify-center rounded-full">
+        <span className="text-white text-[1vw] font-bold">✔</span>
+      </div>
+      
+      
+      <h2 className="text-[2vw] font-bold text-gray-700">Thank You For Your Order</h2>
+      
+      
+      <p className="text-[1rem] text-gray-400">
+        Your order <span className="text-purple-500 font-bold">#12345</span> has been placed successfully!
+      </p>
+      <p className="text-gray-500">Your order estimated delivery time is 24 hrs</p>
+
+      
+      <button className="bg-teal-500 text-white px-[1.5rem] py-[0.5rem] rounded-lg shadow-md hover:bg-teal-600">
+        My Booking
+      </button>
+    </div>
+  );
+};
+
+export default OrderSuccess;
