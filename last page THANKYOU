@@ -1,0 +1,24 @@
+import React from 'react';
+
+const OrderSuccess = () => {
+    return (
+        <div className="w-[638px] h-[227px] flex flex-col items-center justify-center bg-white border border-gray-200 rounded-lg shadow-md">
+            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-2xl">✔️</span>
+            </div>
+            <p className="text-gray-700 text-lg w-[449px] h-[51px] text-center font-bold">
+                Thank you for your order
+            </p>
+            <p className="text-gray-700 text-lg">
+                Your order <span className="text-purple-500 font-bold">#12345</span> has been placed successfully!
+            </p>
+            <p className="text-gray-500 text-sm">Your order estimated delivery time is 24 hrs</p>
+            <button 
+                className="mt-4 px-6 py-2 bg-teal-400 text-white rounded-md shadow-md hover:bg-teal-500 transition">
+                My Booking
+            </button>
+        </div>
+    );
+};
+
+export default OrderSuccess;
